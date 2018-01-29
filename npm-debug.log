@@ -1,0 +1,294 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'node' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node
+8 silly fetchNamedPackageData node
+9 silly mapToRegistry name node
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/node
+13 verbose request uri https://registry.npmjs.org/node
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 12:00:46 PM
+16 verbose request id 8964537313e8a6bb
+17 verbose etag "5a278d7f-520c4"
+18 verbose lastModified Wed, 6 Dec 2017 6:26:07 GMT
+19 http request GET https://registry.npmjs.org/node
+20 http 200 https://registry.npmjs.org/node
+21 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+21 verbose headers   server: 'UploadServer',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'last-modified': 'Wed, 3 Jan 2018 7:15:29 GMT',
+21 verbose headers   etag: '"5a4c8311-53725"',
+21 verbose headers   'content-encoding': 'gzip',
+21 verbose headers   'content-length': '55500',
+21 verbose headers   'accept-ranges': 'bytes',
+21 verbose headers   date: 'Sat, 06 Jan 2018 06:30:47 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   age: '1316',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-ams4143-AMS',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1515220247.477378,VS0,VE2',
+21 verbose headers   vary: 'Accept-Encoding, Accept' }
+22 silly get cb [ 200,
+22 silly get   { 'content-type': 'application/json; charset=UTF-8',
+22 silly get     server: 'UploadServer',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'last-modified': 'Wed, 3 Jan 2018 7:15:29 GMT',
+22 silly get     etag: '"5a4c8311-53725"',
+22 silly get     'content-encoding': 'gzip',
+22 silly get     'content-length': '55500',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Sat, 06 Jan 2018 06:30:47 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '1316',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-ams4143-AMS',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1515220247.477378,VS0,VE2',
+22 silly get     vary: 'Accept-Encoding, Accept' } ]
+23 verbose get saving node to /home/gautam/.npm/registry.npmjs.org/node/.cache.json
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule node@9.3.0 checking installable status
+37 silly cache add args [ 'node', null ]
+38 verbose cache add spec node
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'node',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'node',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed node@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for node
+42 info addNameTag [ 'node', 'latest' ]
+43 silly mapToRegistry name node
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/node
+47 verbose addNameTag registry:https://registry.npmjs.org/node not in flight; fetching
+48 verbose get https://registry.npmjs.org/node not expired, no request
+49 silly addNameTag next cb for node with tag latest
+50 silly addNamed node@9.3.0
+51 verbose addNamed "9.3.0" is a plain semver version for node
+52 silly mapToRegistry name node
+53 silly mapToRegistry using default registry
+54 silly mapToRegistry registry https://registry.npmjs.org/
+55 silly mapToRegistry uri https://registry.npmjs.org/node
+56 verbose addRemoteTarball https://registry.npmjs.org/node/-/node-9.3.0.tgz not in flight; adding
+57 verbose addRemoteTarball [ 'https://registry.npmjs.org/node/-/node-9.3.0.tgz',
+57 verbose addRemoteTarball   'a71d437ff95cb028c87f07ff8fc5365a80fa3bd9' ]
+58 info retry fetch attempt 1 at 12:00:48 PM
+59 info attempt registry request try #1 at 12:00:48 PM
+60 http fetch GET https://registry.npmjs.org/node/-/node-9.3.0.tgz
+61 http fetch 200 https://registry.npmjs.org/node/-/node-9.3.0.tgz
+62 silly fetchAndShaCheck shasum a71d437ff95cb028c87f07ff8fc5365a80fa3bd9
+63 verbose addTmpTarball /tmp/npm-9986-2cce50d9/registry.npmjs.org/node/-/node-9.3.0.tgz not in flight; adding
+64 verbose addTmpTarball already have metadata; skipping unpack for node@9.3.0
+65 silly cache afterAdd node@9.3.0
+66 verbose afterAdd /home/gautam/.npm/node/9.3.0/package/package.json not in flight; writing
+67 verbose afterAdd /home/gautam/.npm/node/9.3.0/package/package.json written
+68 silly fetchNamedPackageData node-bin-setup
+69 silly mapToRegistry name node-bin-setup
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry uri https://registry.npmjs.org/node-bin-setup
+73 verbose request uri https://registry.npmjs.org/node-bin-setup
+74 verbose request no auth needed
+75 info attempt registry request try #1 at 12:00:48 PM
+76 verbose etag "5976bbea-1511"
+77 verbose lastModified Tue, 25 Jul 2017 3:32:58 GMT
+78 http request GET https://registry.npmjs.org/node-bin-setup
+79 http 304 https://registry.npmjs.org/node-bin-setup
+80 verbose headers { date: 'Sat, 06 Jan 2018 06:30:49 GMT',
+80 verbose headers   via: '1.1 varnish',
+80 verbose headers   'cache-control': 'max-age=300',
+80 verbose headers   etag: '"5976bbea-1511"',
+80 verbose headers   age: '1315',
+80 verbose headers   connection: 'keep-alive',
+80 verbose headers   'x-served-by': 'cache-ams4446-AMS',
+80 verbose headers   'x-cache': 'HIT',
+80 verbose headers   'x-cache-hits': '1',
+80 verbose headers   'x-timer': 'S1515220249.036750,VS0,VE1',
+80 verbose headers   vary: 'Accept-Encoding, Accept' }
+81 silly get cb [ 304,
+81 silly get   { date: 'Sat, 06 Jan 2018 06:30:49 GMT',
+81 silly get     via: '1.1 varnish',
+81 silly get     'cache-control': 'max-age=300',
+81 silly get     etag: '"5976bbea-1511"',
+81 silly get     age: '1315',
+81 silly get     connection: 'keep-alive',
+81 silly get     'x-served-by': 'cache-ams4446-AMS',
+81 silly get     'x-cache': 'HIT',
+81 silly get     'x-cache-hits': '1',
+81 silly get     'x-timer': 'S1515220249.036750,VS0,VE1',
+81 silly get     vary: 'Accept-Encoding, Accept' } ]
+82 verbose etag https://registry.npmjs.org/node-bin-setup from cache
+83 verbose get saving node-bin-setup to /home/gautam/.npm/registry.npmjs.org/node-bin-setup/.cache.json
+84 silly resolveWithNewModule node-bin-setup@1.0.6 checking installable status
+85 silly cache add args [ 'node-bin-setup@^1.0.0', null ]
+86 verbose cache add spec node-bin-setup@^1.0.0
+87 silly cache add parsed spec Result {
+87 silly cache add   raw: 'node-bin-setup@^1.0.0',
+87 silly cache add   scope: null,
+87 silly cache add   name: 'node-bin-setup',
+87 silly cache add   rawSpec: '^1.0.0',
+87 silly cache add   spec: '>=1.0.0 <2.0.0',
+87 silly cache add   type: 'range' }
+88 silly addNamed node-bin-setup@>=1.0.0 <2.0.0
+89 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for node-bin-setup
+90 silly addNameRange { name: 'node-bin-setup',
+90 silly addNameRange   range: '>=1.0.0 <2.0.0',
+90 silly addNameRange   hasData: false }
+91 silly mapToRegistry name node-bin-setup
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry uri https://registry.npmjs.org/node-bin-setup
+95 verbose addNameRange registry:https://registry.npmjs.org/node-bin-setup not in flight; fetching
+96 verbose get https://registry.npmjs.org/node-bin-setup not expired, no request
+97 silly addNameRange number 2 { name: 'node-bin-setup',
+97 silly addNameRange   range: '>=1.0.0 <2.0.0',
+97 silly addNameRange   hasData: true }
+98 silly addNameRange versions [ 'node-bin-setup',
+98 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.6' ] ]
+99 silly addNamed node-bin-setup@1.0.6
+100 verbose addNamed "1.0.6" is a plain semver version for node-bin-setup
+101 silly cache afterAdd node-bin-setup@1.0.6
+102 verbose afterAdd /home/gautam/.npm/node-bin-setup/1.0.6/package/package.json not in flight; writing
+103 verbose afterAdd /home/gautam/.npm/node-bin-setup/1.0.6/package/package.json written
+104 silly loadAllDepsIntoIdealTree Finishing
+105 silly idealTree:prePrune 1-12-skeleton
+105 silly idealTree:prePrune +-- node-bin-setup@1.0.6
+105 silly idealTree:prePrune `-- node@9.3.0
+106 silly loadIdealTree Finishing
+107 silly currentTree 1-12-skeleton
+108 silly idealTree 1-12-skeleton
+108 silly idealTree +-- node-bin-setup@1.0.6
+108 silly idealTree `-- node@9.3.0
+109 silly generateActionsToTake Starting
+110 silly install generateActionsToTake
+111 silly generateActionsToTake Finishing
+112 silly diffTrees action count 2
+113 silly diffTrees add node-bin-setup@1.0.6
+114 silly diffTrees add node@9.3.0
+115 silly decomposeActions action count 16
+116 silly decomposeActions fetch node-bin-setup@1.0.6
+117 silly decomposeActions extract node-bin-setup@1.0.6
+118 silly decomposeActions test node-bin-setup@1.0.6
+119 silly decomposeActions preinstall node-bin-setup@1.0.6
+120 silly decomposeActions build node-bin-setup@1.0.6
+121 silly decomposeActions install node-bin-setup@1.0.6
+122 silly decomposeActions postinstall node-bin-setup@1.0.6
+123 silly decomposeActions finalize node-bin-setup@1.0.6
+124 silly decomposeActions fetch node@9.3.0
+125 silly decomposeActions extract node@9.3.0
+126 silly decomposeActions test node@9.3.0
+127 silly decomposeActions preinstall node@9.3.0
+128 silly decomposeActions build node@9.3.0
+129 silly decomposeActions install node@9.3.0
+130 silly decomposeActions postinstall node@9.3.0
+131 silly decomposeActions finalize node@9.3.0
+132 silly executeActions Starting
+133 silly install executeActions
+134 silly doSerial global-install 0
+135 silly doParallel fetch 2
+136 verbose lock using /home/gautam/.npm/_locks/staging-5a712bb7305c2c03.lock for /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging
+137 silly doParallel extract 2
+138 silly extract node-bin-setup@1.0.6
+139 silly extract node@9.3.0
+140 verbose unbuild node_modules/.staging/node-bin-setup-a2a2ceb8
+141 verbose unbuild node_modules/.staging/node-2e47bdd7
+142 silly gentlyRm /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-bin-setup-a2a2ceb8 is being purged from base /home/gautam/PycharmProjects/ud811/1-12-skeleton
+143 verbose gentlyRm don't care about contents; nuking /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-bin-setup-a2a2ceb8
+144 verbose tar unpack /home/gautam/.npm/node-bin-setup/1.0.6/package.tgz
+145 verbose tar unpacking to /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-bin-setup-a2a2ceb8
+146 silly gentlyRm /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-bin-setup-a2a2ceb8 is being purged
+147 verbose gentlyRm don't care about contents; nuking /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-bin-setup-a2a2ceb8
+148 silly gentlyRm /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-2e47bdd7 is being purged from base /home/gautam/PycharmProjects/ud811/1-12-skeleton
+149 verbose gentlyRm don't care about contents; nuking /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-2e47bdd7
+150 silly gunzTarPerm modes [ '755', '644' ]
+151 verbose tar unpack /home/gautam/.npm/node/9.3.0/package.tgz
+152 verbose tar unpacking to /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-2e47bdd7
+153 silly gentlyRm /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-2e47bdd7 is being purged
+154 verbose gentlyRm don't care about contents; nuking /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-2e47bdd7
+155 silly gunzTarPerm modes [ '755', '644' ]
+156 silly gunzTarPerm extractEntry package.json
+157 silly gunzTarPerm extractEntry package.json
+158 silly gunzTarPerm extractEntry index.js
+159 silly gunzTarPerm extractEntry installArchSpecificPackage.js
+160 silly gunzTarPerm extractEntry README.md
+161 silly gentlyRm /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-bin-setup-a2a2ceb8/node_modules is being purged
+162 verbose gentlyRm don't care about contents; nuking /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-bin-setup-a2a2ceb8/node_modules
+163 silly gentlyRm /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-2e47bdd7/node_modules is being purged
+164 verbose gentlyRm don't care about contents; nuking /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-2e47bdd7/node_modules
+165 silly doParallel preinstall 2
+166 silly preinstall node-bin-setup@1.0.6 /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-bin-setup-a2a2ceb8
+167 info lifecycle node-bin-setup@1.0.6~preinstall: node-bin-setup@1.0.6
+168 silly preinstall node@9.3.0 /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-2e47bdd7
+169 info lifecycle node@9.3.0~preinstall: node@9.3.0
+170 silly lifecycle node-bin-setup@1.0.6~preinstall: no script for preinstall, continuing
+171 warn lifecycle node@9.3.0~preinstall: cannot run in wd %s %s (wd=%s) node@9.3.0 node installArchSpecificPackage /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging/node-2e47bdd7
+172 silly doReverseSerial remove 0
+173 silly doSerial move 0
+174 silly doSerial finalize 2
+175 silly finalize /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/node-bin-setup
+176 silly finalize /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/node
+177 silly doSerial build 2
+178 silly build node-bin-setup@1.0.6
+179 info linkStuff node-bin-setup@1.0.6
+180 silly linkStuff node-bin-setup@1.0.6 has /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules as its parent node_modules
+181 verbose linkBins node-bin-setup@1.0.6
+182 verbose linkMans node-bin-setup@1.0.6
+183 silly build node@9.3.0
+184 info linkStuff node@9.3.0
+185 silly linkStuff node@9.3.0 has /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules as its parent node_modules
+186 verbose linkBins node@9.3.0
+187 verbose link bins [ { node: 'bin/node' },
+187 verbose link bins   '/home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.bin',
+187 verbose link bins   false ]
+188 verbose linkMans node@9.3.0
+189 verbose unlock done using /home/gautam/.npm/_locks/staging-5a712bb7305c2c03.lock for /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/.staging
+190 silly rollbackFailedOptional Starting
+191 silly rollbackFailedOptional Finishing
+192 silly runTopLevelLifecycles Starting
+193 silly runTopLevelLifecycles Finishing
+194 silly install printInstalled
+195 warn enoent ENOENT: no such file or directory, open '/home/gautam/PycharmProjects/ud811/1-12-skeleton/package.json'
+196 warn 1-12-skeleton No description
+197 warn 1-12-skeleton No repository field.
+198 warn 1-12-skeleton No README data
+199 warn 1-12-skeleton No license field.
+200 verbose stack Error: ENOENT: no such file or directory, chmod '/home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/node/bin/node'
+200 verbose stack     at Error (native)
+201 verbose cwd /home/gautam/PycharmProjects/ud811/1-12-skeleton
+202 error Linux 4.10.0-42-generic
+203 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "node"
+204 error node v4.2.6
+205 error npm  v3.5.2
+206 error path /home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/node/bin/node
+207 error code ENOENT
+208 error errno -2
+209 error syscall chmod
+210 error enoent ENOENT: no such file or directory, chmod '/home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/node/bin/node'
+211 error enoent ENOENT: no such file or directory, chmod '/home/gautam/PycharmProjects/ud811/1-12-skeleton/node_modules/node/bin/node'
+211 error enoent This is most likely not a problem with npm itself
+211 error enoent and is related to npm not being able to find a file.
+212 verbose exit [ -2, true ]

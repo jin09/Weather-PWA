@@ -194,6 +194,20 @@
       app.selectedCities.push({key: cities[i], label: cities[i]});
     }
   }
-  // console.log(localStorage.getItem('cities'));
+
+  /*****************************************************************************
+   *
+   * Registering Service Worker
+   *
+   ****************************************************************************/
+
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+     .register('/service-worker.js')
+     .then(function() { 
+        console.log('Service Worker Registered'); 
+      });
+  }
 
 })();

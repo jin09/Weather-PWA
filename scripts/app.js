@@ -69,6 +69,14 @@
     app.getForecast(key, label);
     app.selectedCities.push({key: key, label: label});
     app.toggleAddDialog(false);
+    var saved_cities = JSON.parse(localStorage.getItem('cities'));
+    if(saved_cities === null){
+      saved_cities = [];
+    }
+    if(!saved_cities.includes(key)){
+      saved_cities.push(key);
+    }
+    localStorage.setItem('cities', JSON.stringify(saved_cities));
   });
 
   /* Event listener for cancel button in add city dialog */
@@ -176,7 +184,16 @@
       app.getForecast(key);
     });
   };
-
-  app.updateForecastCard(injectedForecast);
+  var cities = JSON.parse(localStorage.getItem('cities'));
+  if(cities === null || cities.length == 0){
+    app.updateForecastCard(injectedForecast);
+  }
+  else{
+    for(var i=0;i<cities.length;i++){
+      app.getForecast(cities[i], cities[i]);
+      app.selectedCities.push({key: cities[i], label: cities[i]});
+    }
+  }
+  // console.log(localStorage.getItem('cities'));
 
 })();
